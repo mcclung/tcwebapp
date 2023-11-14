@@ -17,3 +17,7 @@ def test():
     formatted_date = now.strftime('%Y-%m-%d %H:%M:%S')
     return formatted_date
 
+@app.route("/mcclung")
+def mcclung():
+    return "MCCLUNG"
+
