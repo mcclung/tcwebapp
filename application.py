@@ -2,8 +2,6 @@ import datetime
 from flask import Flask
 
 app = Flask(__name__)
-now = datetime.datetime.now()
-formatted_date = now.strftime('%Y-%m-%d %H:%M:%S')
 
 @app.route("/")
 def hello():
@@ -15,5 +13,7 @@ def helloworld():
 
 @app.route("/test")
 def test():
+    now = datetime.datetime.now()
+    formatted_date = now.strftime('%Y-%m-%d %H:%M:%S')
     return formatted_date
 
