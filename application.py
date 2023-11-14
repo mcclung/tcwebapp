@@ -14,6 +14,6 @@ def helloworld():
     return "Hellorld!\n"
 
 @app.route("/test")
-def helloworld():
+def test():
     return formatted_date
 
